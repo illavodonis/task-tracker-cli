@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { Command } from "commander";
 import inquirer from "inquirer";
 import Tasks from "./services/task/task.services";

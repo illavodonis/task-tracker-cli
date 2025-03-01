@@ -8,7 +8,8 @@
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/index.js",
-    "dev": "npx tsx index.ts"
+    "dev": "npx tsx index.ts",
+    "prestart": "npm run build"
   },
   "author": "Illia Vodonis",
   "license": "ISC",
