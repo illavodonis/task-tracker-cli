@@ -14,8 +14,8 @@ export interface ITask {
 export interface IUpdateTask extends Partial<Omit<ITask, 'id' | 'createdAt'>> {}
 
 export interface ITaskService {
-  getTasks(status?: TaskStatus): Promise<ITask[]>;
-  createTask(description: string): Promise<ITask>;
-  updateTask(id: number, updateTask: IUpdateTask): Promise<ITask | null>;
-  deleteTask(id: number): Promise<boolean>;
+  getTasks(status?: TaskStatus): ITask[];
+  createTask(description: string): ITask;
+  updateTask(id: number, updateTask: IUpdateTask): ITask | null;
+  deleteTask(id: number): boolean;
 }
